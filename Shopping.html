@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/annexe.css"
+    <title>Shopping Form</title>
+
+</head>
+<body>
+
+<!-- Header of web site -->
+
+    <header class="main-head">
+        <nav class="nav-header">
+            <div class="container-logo" > <a href="index.html"><div class="marque">Online  </div><div class="other">SuperMarket</div> </a></div>
+            <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="services.html">Items/Services</a></li>
+                <li><a class="active" href="Shopping.html">Shopping Form</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    <div class="ban_shopping"></div>
+    </header>
+
+
+ <!-- section main -->   
+    <main class="main">
+
+        <div class="presentation">
+            <h1 class="article-soubTitle"> Yes you can !</h1>
+            <p class="article-message">
+                User should be able to select multiple items via checkboxes.
+                User should be able to select one of the properties with the provided cost via radio buttons
+            </p>
+        </div>
+
+    <!-- table of commende-->
+        <table>
+            <tr>
+                <th>items</th>
+                <th>propriete</th>
+                <th>numbers of items</th>
+                <th>const</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="samsung"> Samsung
+                </td>
+                <td>
+                    <input type="radio" name="phone" id="note">Note  100.00$ <br>
+                    <input type="radio" name="phone" id="s10">S10  200.00$ <br>
+                    <input type="radio" name="phone" id="m20">M20  300.00$ <br>
+                    <input type="radio" name="phone" id="a12">A12  400.00$ <br>
+                </td>
+                <td>
+                    <select name="" id="nombre1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+                <td><div class="result" id="one"></div></td>
+        </tr>
+        <tr>
+                <td>
+                    <input type="checkbox" id="huawei"> Huawai
+                </td>
+                <td>
+                    <input type="radio" name="phone1" id="mt7">Mt7  100.00$  <br/>
+                    <input type="radio" name="phone1" id="mat10">Mat10  200.00$ <br/>
+                    <input type="radio" name="phone1" id="mat20">Mat20  300.00$ <br/>
+                    <input type="radio" name="phone1" id="p10">P10  400.00$ <br/>
+                </td>
+                <td>
+                    <select name="" id="nombre2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+                <td><div class="result" id="two"></div></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="tecno"> Techno
+                </td>
+                <td>
+                    <input type="radio" name="phone2" id="pop">pop  100.00$ <br/>
+                    <input type="radio" name="phone2" id="camon">camon  200.00$ <br/>
+                    <input type="radio" name="phone2" id="phantom">phantom  300.00$ <br/>
+                    <input type="radio" name="phone2" id="wx4">wx4  400.00$  <br/>
+                </td>
+                <td>
+                    <select name="" id="nombre3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+                <td><div class="result" id="tree"></div></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="nokia"> Nokia
+                </td>
+                <td>
+                    <input type="radio" name="phone3" id="lumia">Lumia  100.00$ <br/>
+                    <input type="radio" name="phone3" id="r52">R52  200.00$ <br/>
+                    <input type="radio" name="phone3" id="j36">J36  300.00$ <br/>
+                    <input type="radio" name="phone3" id="pro">Pro  400.00$  <br/>
+                </td>
+                <td>
+                    <select name="" id="nombre4">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+                <td><div class="result" id="fore"></div></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="mi"> Red Mi
+                </td>
+                <td>
+                    <input type="radio" name="phone4" id="one1">One  100.00$ <br/>
+                    <input type="radio" name="phone4" id="oneplus">Oneplus 200.00$ <br/>
+                    <input type="radio" name="phone4" id="pro2">Pro  300.00$ <br/>
+                    <input type="radio" name="phone4" id="proplus">Proplus  400.00$ <br/>
+                </td>
+                <td>
+                    <select name="" id="nombre5">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+                <td><div class="result" id="five"></div></td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td><input type="button" id="calcul" value="calcul" style="color: rgb(216, 216, 216);"> </td>
+                <td> ($)<span id="reponse">-</span></td>
+            </tr>
+        </table>
+
+    </main>
+
+<!-- aside section  -->
+
+    <aside class="asidebar">
+        <h4 class="asidebar-title">In Stock</h4>
+        <ul>
+            <li> <a href="services.html#samsung">Samsung</a> </li>
+            <li> <a href="services.html#huawai">Huawai</a></li>
+            <li> <a href="services.html#techno">Techno</a></li>
+            <li> <a href="services.html#nokia">Nokia</a></li>
+            <li> <a href="services.html#red">Red mi</a> </li>
+
+        </ul>
+        <hr>
+        <h4 class="asidebar-title"> social networks </h4>
+        <ul>
+            <li> <a href="#"><img src="assets/svg/fb.svg" height="16px" width="16px" >  Faceboock</a> </li>
+            <li> <a href="#"><img src="assets/svg/inst.svg" height="16px" width="16px">  Instagram</a> </li>
+            <li> <a href="#"><img src="assets/svg/wap.svg" height="16px" width="16px">  Whatsapp</a> </li>
+            <li> <a href="#"><img src="assets/svg/twi.svg" height="16px" width="16px">  Twitter</a> </li>
+        </ul>    
+    </aside>
+
+<!-- footer section -->
+
+    <footer class="footer">
+        <div class="main-footer" >
+            <div class="footer-part1">
+            
+                <div class="f-logo">
+                    <div class="footer-logo" > <a href="index.html"><div class="footer-marque">Online  </div><div class="footer-other">SuperMarket</div> </a></div>
+                </div>
+
+                <div class="footer-contact"> 
+                    <h4 class="asidebar-title"> social networks </h4>
+                    <ul>
+                        <li> <a href="#"><img class="whitter" src="assets/svg/fb.svg" height="16px" width="16px" >  Faceboock</a> </li>
+                        <li> <a href="#"><img class="whitter" src="assets/svg/inst.svg" height="16px" width="16px">  Instagram</a> </li>
+                        <li> <a href="#"><img class="whitter" src="assets/svg/wap.svg" height="16px" width="16px">  Whatsapp</a> </li>
+                        <li> <a href="#"><img class="whitter" src="assets/svg/twi.svg" height="16px" width="16px">  Twitter</a> </li>
+                    </ul> 
+                </div>        
+            
+            </div>
+
+
+            <div class="footer-part2">
+
+                <div class="divv">
+                    <div><img src="assets/img/m20.jpeg" alt="" class="carte"></div>
+                    <div><img src="assets/img/S10.jpg" alt="" class="carte"></div>
+                    <div><img src="assets/img/canon.jpeg" alt="" class="carte"></div>
+                    <div><img src="assets/img/4.jpg" alt="" class="carte"></div>
+                    <div><img src="assets/img/huawei-mate-10-final.png" alt="" class="carte"></div>
+                    <div><img src="assets/img/5.jpg" alt="" class="carte"></div> 
+                </div>
+                
+                <span> buy more with online SuperMarket  </span>
+                    
+            </div>
+        </div>
+
+        <div class="footer-footer">
+            copyrigth by Dear-Luc-Eliezer  2022 .5 janvier 
+        </div>
+    </footer>    
+    <script src="js/script.js"></script>
+</body>
+</html>

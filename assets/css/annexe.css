@@ -1,0 +1,129 @@
+/*** item service **/
+
+.ban_s {
+    height: 400px;
+    background: no-repeat center center/ cover url("../img/our_services.jpg");
+}
+
+article#samsung,
+article#red,
+article#nokia,
+article#techno,
+article#huawai {
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+article#samsung .article-soubTitle,
+article#techno .article-soubTitle {
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+article#techno .article-message,
+article#nokia .article-soubTitle {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+article .galery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    clear: both;
+}
+
+.content-phone .pcard {
+    display: flex;
+    align-items: stretch;
+    width: 400px;
+    border-bottom: 2px solid black;
+}
+
+.content-phone .pcard img {
+    width: 40%;
+}
+
+.content-phone .pcard .pcard-info {
+    background-color: black;
+    width: 60%;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 0 10px 10px 0;
+    margin: auto;
+    padding: 5px;
+    box-shadow: 0px 6px 20px black;
+}
+
+.pcard-info .pmodel,
+.pcard-info .pmemorie,
+.pcard-info .pram,
+.pcard-info .pprice {
+    display: flex;
+    flex-direction: column;
+}
+
+.pcard-info .modif {
+    color: red;
+    margin-left: 20px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.pcard-info .price {
+    color: chocolate;
+    font-weight: 700;
+}
+
+.pcard-info a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: chocolate;
+    transition: 1000ms;
+}
+
+.pcard-info a:hover {
+    color: chocolate;
+    background-color: white;
+}
+
+
+/*** Shopping ****/
+
+.ban_shopping {
+    height: 450px;
+    background: no-repeat center center/ cover url("../img/shopping.jpg");
+}
+
+.presentation .article-soubTitle {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.presentation {
+    padding: 5px;
+}
+
+
+/**** contact ******/
+
+.ban_c {
+    height: 400px;
+    background: no-repeat center center/cover url("../img/contact-us.png");
+}
+
+@media screen and (max-width:910px) {
+    .content-phone .pcard {
+        width: 200px;
+        margin: 0 5px 0 5px;
+    }
+    article#samsung,
+    article#red,
+    article#nokia,
+    article#techno,
+    article#huawai {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+}
